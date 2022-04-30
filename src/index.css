@@ -1,13 +1,153 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    background:#2f47b6 ;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2f47b6,#2f47b6 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#2f47b6 ,#2f47b6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10vh;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 7px 11px -2px rgba(0,0,0,0.89); 
+    box-shadow: 6px 7px 11px -2px rgba(0,0,0,0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.title {
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.input {
+    margin: 5px;
+    padding: 5px;
+}
+
+.input label {
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+}
+
+.input input {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+button {
+    background: #7071b9;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    transition: 0.4s;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+button:hover {
+    background: #486aef;
+    box-shadow: 6px 7px 11px -2px rgba(0,0,0,0.89);
+}
+
+.question-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.question-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: #fff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+span {
+    color: #fff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Styles for questions  */
+
+.card {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.developed p {
+    font-size: 15px;
+}
+
+.developed span {
+    font-size: 15px;
+}
+
+img {
+    width: 170px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+button .retire-btn {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/*  button .start-btn {
+    color: rgb(222, 34, 34);
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}*/
